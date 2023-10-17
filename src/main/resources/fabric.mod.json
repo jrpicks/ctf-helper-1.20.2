@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "ctfhelper",
+	"version": "${version}",
+	"name": "CTF Helper",
+	"description": "Capture The Flag Minigame Utils, Events Handler",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ctfhelper/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jrpicks.ctfhelper.CTFHelper"
+		],
+		"client": [
+			"net.jrpicks.ctfhelper.CTFHelperClient"
+		],
+		"fabric-datagen": [
+			"net.jrpicks.ctfhelper.CTFHelperDataGenerator"
+		]
+	},
+	"mixins": [
+		"ctfhelper.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.23",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
